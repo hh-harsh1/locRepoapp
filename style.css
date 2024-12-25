@@ -1,0 +1,122 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: content-box;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-color: #1d1d1d;
+}
+
+header {
+  width: 100%;
+  height: 20%;
+  background-color: #393939;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main {
+  width: 100%;
+  height: 80%;
+  display: flex;
+  justify-content: center;
+}
+
+header input {
+  width: 600px;
+  height: 50px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  border: none;
+  padding-left: 10px;
+  font-size: larger;
+}
+
+.search {
+  width: 100px;
+  height: 50px;
+  border-radius: 10px;
+  margin-left: 1rem;
+  font-size: larger;
+  font-weight: 700;
+  transition: 0.1s ease transform;
+}
+
+.section {
+  position: relative;
+  width: 80%;
+  display: grid;
+  padding: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 50px;
+}
+
+.search:hover {
+  background-color: #b9b9b9;
+  transform: scale(1.1);
+}
+
+.recipe {
+  height: 450px;
+  background-color: #404040;
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: auto; /* Enables scrolling */
+  scrollbar-width: none; /* Hides scrollbar in Firefox */
+  -ms-overflow-style: none; /* Hides scrollbar in IE/Edge */
+}
+
+.recipe .imgCon {
+  width: 100%;
+  height: 70%;
+  border-radius: 1rem;
+}
+
+.imgCon img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 1rem;
+  border: none;
+}
+
+.disc h3 {
+  font-size: 2rem;
+  color: white;
+  padding: 10px;
+}
+
+.disc p {
+  font-size: 1rem;
+  color: white;
+  padding: 10px;
+}
+
+.getRecipe {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  width: 200px;
+  height: 40px;
+  background-color: #151515;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  font-size: larger;
+}
+
+.recipeCon {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  background-color: #fff;
+}
