@@ -34,7 +34,7 @@ function showfood(food) {
     });
 
     button.addEventListener("click", (e) => {
-      e.preventDefault();
+      e.stopPropagation();
       console.log(e.target);
     });
 
