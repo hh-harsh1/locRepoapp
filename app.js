@@ -1,7 +1,7 @@
 const section = document.querySelector(".section");
 
 async function getRecipe() {
-  const url = ""; // TODO : add url here
+  const url = "https://localhost:3001/api/v1/food/recipe";
   const response = await fetch(url);
   const data = await response.json();
   showfood(data.meals);
