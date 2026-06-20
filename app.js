@@ -39,6 +39,10 @@ function showfood(food) {
     });
 
     button.addEventListener("click", (e) => {
+      // TODO : add click event
+    });
+
+    button.addEventListener("click", (e) => {
       e.preventDefault;
 
       const con = document.createElement("div");
