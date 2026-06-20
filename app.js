@@ -27,7 +27,7 @@ function showfood(food) {
     `;
 
     const button = box.querySelector(".getRecipe");
-    console.log("how are you");
+    console.log("hello");
 
     button.addEventListener("click", (e) => {
       e.preventDefault;
