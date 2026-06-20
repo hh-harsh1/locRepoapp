@@ -38,7 +38,7 @@ function showfood(food) {
       console.log(e.target);
     });
 
-    button.addEventListener("click", (e) => {
+    button.addEventListener("clickadadadad", (e) => {
       // TODO : add click event
     });
 
