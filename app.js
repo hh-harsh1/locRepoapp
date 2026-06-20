@@ -30,6 +30,11 @@ function showfood(food) {
     console.log("hello");
 
     button.addEventListener("click", (e) => {
+      e.preventDefault();
+      console.log(e.target);
+    });
+
+    button.addEventListener("click", (e) => {
       e.preventDefault;
 
       const con = document.createElement("div");
