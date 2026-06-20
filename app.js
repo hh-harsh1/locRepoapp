@@ -1,7 +1,7 @@
 const section = document.querySelector(".section");
 
 async function getRecipe() {
-  const url = "";
+  const url = ""; // TODO : add url here
   const response = await fetch(url);
   const data = await response.json();
   showfood(data.meals);
@@ -9,6 +9,7 @@ async function getRecipe() {
 }
 
 function showfood(food) {
+  // TODO : formate code
   food.forEach((item) => {
     const src = item.strMealThumb;
     const box = document.createElement("div");
@@ -24,6 +25,7 @@ function showfood(food) {
       <button class="getRecipe"> recipe </button>
     </div>
     `;
+
     const button = box.querySelector(".getRecipe");
 
     button.addEventListener("click", (e) => {
